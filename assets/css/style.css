@@ -285,3 +285,238 @@ h3, .h3{
 .fade-carousel .slides .slide-5 {
   background-image: url("../img/marruecos.jpg");
 }
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }  
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; } 
+        .nosotros { margin-top: 17%;}
+
+}
+}
+
+.hero h3{
+	font-size: 17px;
+}
+
+.carousel-control.left{
+	background-image: none;
+	height: 500px;
+}
+.carousel-control.right{
+	background-image: none;
+		height: 500px;
+
+}
+
+.carousel-inner{
+}
+
+.navbar-default .navbar-toggle{
+	border-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: white;
+}
+/*fin carrusel*/
+
+.btn-primary{
+	background-color: #663399;
+	border-color: #663399;
+}
+
+/*footer*/
+
+/* Sticky footer position and size
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: auto;
+margin: 0 auto;
+text-align: center;
+background: #f8f8f8;
+margin-top: 51px;
+    font-family: 'Roboto', sans-serif;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 34em) {
+    body {
+    }
+    .footer {
+      height: auto;
+    }
+
+}
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+footer {
+  padding-top: 30px;
+  background-color: #663399;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+  color: #d8d8d8;
+  text-decoration:none;
+}
+
+footer .form-control {
+    background-color: white;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: black;
+    padding: 0.7em 1em;
+}
+
+.map{
+	padding: 10px;
+}
+
+.nosotros {
+	height: 100%;
+	width: 100%;
+}
+
+.text-left {
+	text-align: left;
+	margin-bottom: 40px;
+}
+
+.fondogris{
+	background-color: aliceblue;
+	margin-top: 30px;
+}
+
+.fondogrisclaro{
+	background-color: #F5F5F5;
+	margin-top: 30px;
+}
+
+.col-md-4 {
+    margin-top: 2%;
+}
+
+.input-group {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;}
+
+    .row2 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.btn-group {
+    z-index: 2;
+    margin-left: -1px;
+    background-color: grey;
+}
+
+.my-4 li{
+	background-color: #e6f7ff;
+	margin: 5px;
+}
+
+.fondoazul{
+
+	background-color: #e6f7ff;
+}
+
+
+/*search*/
+
+#custom-search-input{
+    padding: 3px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 1;
+    box-shadow: none;
+    width: 100%;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+@media (min-width: 992px){
+.col-md-6 { width: 100%;
+	}
+		}
+
+.imgcorta img{
+object-fit: cover; border-radius:50%; 
+width: 150px;
+height: 150px;
+}
+
+.masnoticias{
+    background-color: #663399;
+    width: 100%;
+    color: white;
+    padding-top: 1%;
+    border-radius: 15px;
+
+
+}
+
+    .relativo{
+position: relative;
+    }
+
+  @media (min-width: 768px){
+.navbar {
+    border-radius: 0px;
+}
+		}
+
+
+		
+
+</style>
