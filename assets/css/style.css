@@ -171,8 +171,10 @@ Image credits: unsplash.com
     background-color: #f39c12;
     border-color: #f39c12;
     opacity: .7;
+    border: 2px solid white
 }
 .fade-carousel .carousel-indicators > li.active {
+  transform: scale(1.5);
   width: 10px;
   height: 10px;
   opacity: 1;
@@ -262,7 +264,7 @@ h3, .h3{
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3, 
-.fade-carousel .slides .slide-4 
+.fade-carousel .slides .slide-4, 
 .fade-carousel .slides .slide-5 {
   height: 500px;
   background-size: cover;
@@ -280,7 +282,6 @@ h3, .h3{
 }
 .fade-carousel .slides .slide-4 {
   background-image: url("../img/egipto.jpg");
-}
 }
 .fade-carousel .slides .slide-5 {
   background-image: url("../img/marruecos.jpg");
@@ -516,7 +517,14 @@ position: relative;
 }
 		}
 
+.embed-responsive .embed-responsive-item, .embed-responsive iframe, .embed-responsive embed, .embed-responsive object, .embed-responsive video{
+  height: 77%;
+  padding: 10px;
+}
 
+.redes{
+  margin-top: 20px;
+}
 		
 
 </style>
