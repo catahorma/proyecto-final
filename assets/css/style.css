@@ -327,6 +327,8 @@ h3, .h3{
 
 .navbar-default .navbar-toggle{
 	border-color: white;
+      margin-top: -50px !important;
+    margin-right: 1px !important;
 }
 
 .navbar-default .navbar-toggle .icon-bar{
@@ -624,14 +626,22 @@ b, strong {
   border-radius: 6px 0 6px 6px;
 }
 
-/*
-@media (min-width: 768px) { 
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 767px){
+    .desk { display: block;} 
+    .mob { display: none;} 
 }
-@media (min-width: 992px) { 
+@media screen and (max-width: 767px){
+    .mob { display: inline; }
+    .desk { display: none; } 
+    .mob img{ margin: 0 auto; text-align: center; }
+   
+
 }
-@media (min-width: 1200px) { 
 }
-*/
 
 
 </style>
