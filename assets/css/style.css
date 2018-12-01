@@ -125,7 +125,7 @@ color: white;
 .row{
 width: 90%;
 margin: 0 auto;
-margin-top: 3%;
+margin-top: 1%;
 margin-bottom: 3%;
 
 }
@@ -215,6 +215,8 @@ Image credits: unsplash.com
 
 h3, .h3{
 	font-size: 18px;
+      font-size: 25px;
+    margin-top: 2%;
 
 }
 
@@ -646,13 +648,13 @@ b, strong {
 
   .margin {margin-bottom: 45px;}
   .bg-1 { 
-      background-color: #BB7AC0; 
+      background-color: #B277B7; 
       color: #ffffff;
   }
   .bg-2 { 
       background-color: #474e5d; 
       color: #ffffff;
-      height: 200px;
+      height: 100%;
     padding: 2%;
   }
   .bg-3 { 
