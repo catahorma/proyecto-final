@@ -656,6 +656,7 @@ b, strong {
       color: #ffffff;
       height: 100%;
     padding: 2%;
+
   }
   .bg-3 { 
       background-color: #ffffff; 
@@ -666,5 +667,8 @@ b, strong {
       color: #fff;
   }
 
+.botones {
+  padding: 2%;
+}
 
 </style>
