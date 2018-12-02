@@ -671,4 +671,31 @@ b, strong {
   padding: 2%;
 }
 
+.grayscale {
+     filter: grayscale( 100% );
+}
+
+
+     .byn img {
+    filter: none;
+    -webkit-filter: grayscale(100%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+    cursor: pointer;
+    transition: all 300ms ease;
+  }
+  .byn img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    -moz-filter:    grayscale(0%);
+    -ms-filter:     grayscale(0%);
+    -o-filter:      grayscale(0%);
+  }
+
+
+
+
+  
+
 </style>
