@@ -1,5 +1,7 @@
 # Mi viaje por Medio Oriente 😍
 
+### Por Catalina Hormazábal
+
 ## Descripción
 Mi sitio trata sobre mi futuro viaje a Medio Oriente, contiene información sobre cada país y también habla un poco de mi como viajera.
 
@@ -50,3 +52,4 @@ Assets: (js,css, img, fonts)
 
 ## Licencia
 [MIT](https://choosealicense.com/licenses/mit/)
+
