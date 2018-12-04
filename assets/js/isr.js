@@ -13,7 +13,7 @@ $(document).ready(function(){
     $(function(){
 
       $('.byn').on("click", function(){
-      	$(this).toggleClass("hover");
+        $(this).toggleClass("hover");
       });
       
     });
@@ -21,93 +21,23 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-    var img = new Image();
-
-// User Variables - customize these to change the image being scrolled, its
-// direction, and the speed.
-
-img.src = 'assets/img/egipto-land.jpg';
-var CanvasXSize = 2000;
-var CanvasYSize = 200;
-var speed = 30; // lower is faster
-var scale = 1.05;
-var y = -4.5; // vertical offset
-
-// Main program
-
-var dx = 0.75;
-var imgW;
-var imgH;
-var x = 0;
-var clearX;
-var clearY;
-var ctx;
-
-img.onload = function() {
-    imgW = img.width * scale;
-    imgH = img.height * scale;
-    
-    if (imgW > CanvasXSize) {
-        // image larger than canvas
-        x = CanvasXSize - imgW;
-    }
-    if (imgW > CanvasXSize) {
-        // image width larger than canvas
-        clearX = imgW;
-    } else {
-        clearX = CanvasXSize;
-    }
-    if (imgH > CanvasYSize) {
-        // image height larger than canvas
-        clearY = imgH;
-    } else {
-        clearY = CanvasYSize;
-    }
-    
-    // get canvas context
-    ctx = document.getElementById('canvas').getContext('2d');
- 
-    // set refresh rate
-    return setInterval(draw, speed);
-}
-
-function draw() {
-    ctx.clearRect(0, 0, clearX, clearY); // clear the canvas
-    
-    // if image is <= Canvas Size
-    if (imgW <= CanvasXSize) {
-        // reset, start from beginning
-        if (x > CanvasXSize) {
-            x = -imgW + x;
-        }
-        // draw additional image1
-        if (x > 0) {
-            ctx.drawImage(img, -imgW + x, y, imgW, imgH);
-        }
-        // draw additional image2
-        if (x - imgW > 0) {
-            ctx.drawImage(img, -imgW * 2 + x, y, imgW, imgH);
-        }
-    }
-
-    // image is > Canvas Size
-    else {
-        // reset, start from beginning
-        if (x > (CanvasXSize)) {
-            x = CanvasXSize - imgW;
-        }
-        // draw aditional image
-        if (x > (CanvasXSize-imgW)) {
-            ctx.drawImage(img, x - imgW + 1, y, imgW, imgH);
-        }
-    }
-    // draw image
-    ctx.drawImage(img, x, y,imgW, imgH);
-    // amount to move
-    x += dx;
-}
-
+        $('.israel').ready(function()
+        {
+            var city = "Jerusalem";
+            var searchtext = "select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='" + city + "') and u='c'"
+            $.getJSON("https://query.yahooapis.com/v1/public/yql?q=" + searchtext + "&format=json&lang=es-ES").then(function(data)
+            {
+                var result = data.query.results.channel;
+                var location = result.location;
+                var item = result.item;
+                var condition = item.condition;
+                var units = result.units;
+                var wind = result.wind;
+                $('.panel-heading')
+                    .html('<h4 class="text-center">' + location.country + ', ' + location.region + ', ' + location.city +'</h4>')
+                $('.panel-body')
+                    .find('img')
+                    .attr('src', 'https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/' + condition.code + 'd.png')
+                    .after('<h2>'+ condition.temp + 'º' + units.temperature + ', ' + condition.text + '</span>')
+            });
+        });

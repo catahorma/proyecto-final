@@ -694,14 +694,6 @@ b, strong {
   }
 
 
-
-
-  @media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
-}
-
 .bg-image-full {
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -714,5 +706,24 @@ b, strong {
   padding: 3%;
   font-size: 16px;
 }
+
+        .body2 {
+            background-color: #7ab5d3;
+        }
+
+        .panel {
+            border: 2px solid #E6F4FA !important;
+            color: #fff;
+        }
+        .panel-heading {
+            background-color: #122b40 !important;
+        }
+        .panel-body {
+            background-color: #2e6da4;
+        }
+
+
+
+
 
 </style>
