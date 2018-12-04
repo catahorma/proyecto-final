@@ -22,7 +22,7 @@ $(document).ready(function(){
 
                 $('.jordania').ready(function()
         {
-            var city = "aman";
+            var city = "amman";
             var searchtext = "select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='" + city + "') and u='c'"
             $.getJSON("https://query.yahooapis.com/v1/public/yql?q=" + searchtext + "&format=json&lang=es-ES").then(function(data)
             {
